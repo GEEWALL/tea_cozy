@@ -1,0 +1,153 @@
+/* properties to apply throughout */
+
+body {
+  background-color: black;
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+h1, h2, h3, h4 { /*reset the annoying automatic margins*/
+  margin: 0;
+}
+/* header */
+
+.header {
+  height: 69px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  top: 0px;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.navigate {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.navigate a {
+  color: seashell;
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+/* body */
+
+.body {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* first body container - mission */
+
+.mission {
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../media/img-mission-background.jpg");
+  justify-content: center;
+  margin-bottom: 60px;
+  align-content: center;
+}
+
+.mission-text {
+  background-color: black;
+  padding: 10px;
+}
+
+.mission-text h2 {
+  margin-bottom: 10px;
+}
+
+/* second body container - tea of the month */
+
+.tom {
+  width: 1000px;
+  margin-bottom: 60px;
+}
+
+.tom h2 {
+  margin-bottom: 20px;
+}
+
+.teapics {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pic {
+  padding: 10px 15px;
+}
+
+.pic img {
+  width: 300px;
+  height: 200px;
+  padding-bottom: 10px;
+}
+
+/* third body container - locations */
+
+.locations {
+  height: 500px;
+  width: 1200px;
+  background-image: url("../media/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.address {
+  background-color: black;
+  margin: 0px 20px;
+  width: 300px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  top: 100px;
+}
+
+.contact {
+  height: 200px;
+}
+
+.copyright {
+  text-align: left;
+  padding-left: 20px;
+}
